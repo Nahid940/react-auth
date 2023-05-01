@@ -9,6 +9,7 @@ import Register from "./components/Register";
 import AddressSave from "./components/AddressSave";
 import AddressBook from "./components/address-book/AddressBook";
 import { AuthProvider } from "./context";
+import Edit from "./components/address-book/Edit";
 
 
 const App = () => {
@@ -52,6 +53,7 @@ const App = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/save-address" element={<AddressSave />} />
+            <Route path="/edit" element={<Edit/>} />
           </Routes>
         </AuthProvider>
         

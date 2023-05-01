@@ -3,7 +3,7 @@ import { Formik, Form, Field, ErrorMessage, useFormik} from 'formik';
 
 
 
-const AddressSave = () => {
+const Edit = () => {
 
   const formik=useFormik({
     initialValues:{
@@ -58,7 +58,7 @@ const AddressSave = () => {
 
   return (
     <div className="col-md-8 offset-md-2">
-        <h5 className="text-primary">Add New Address</h5>
+        <h5 className="text-primary">Edit Address</h5>
         <Formik>
         {({ isSubmitting }) => (
             <Form onSubmit={formik.handleSubmit}>
@@ -106,7 +106,7 @@ const AddressSave = () => {
             </div>
         
             <div className="col-md-12">
-                <button type="submit" className="btn btn-sm btn-info mt-2 mr-2">Save</button>
+                <button type="submit" className="btn btn-sm btn-info mt-2 mr-2">Update</button>
             </div>
             </Form>
         )}
@@ -117,4 +117,4 @@ const AddressSave = () => {
   );
 };
 
-export default AddressSave;
+export default Edit;
