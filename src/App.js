@@ -49,11 +49,11 @@ const App = () => {
         </div>
         <AuthProvider>
           <Routes>
-            <Route path="/" element={<AddressBook />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/save-address" element={<AddressSave />} />
-            <Route path="/edit" element={<Edit/>} />
+            <Route exact path="/" element={<AddressBook />} />
+            <Route exact path="/login" element={<Login />} />
+            <Route exact path="/register" element={<Register />} />
+            <Route exact path="/save-address" element={<AddressSave />} />
+            <Route exact path="/edit/:id" element={<Edit/>} />
           </Routes>
         </AuthProvider>
         
